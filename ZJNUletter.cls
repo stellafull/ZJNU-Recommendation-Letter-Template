@@ -9,16 +9,16 @@
 % (chenfanchao_robin@outlook.com), 23 October 2021
 % Notes:
 %
-% 1. This class can be used for creating letters with FDU logo at the
+% 1. This class can be used for creating letters with ZJNU logo at the
 %    header and  department address at the footer 
 % 2. It is based on the standard Latex document class, letter.cls.
 % 3. Required packages are epsfig and ifthen.
-% 4. If FDU logo is to be included in the head, then the file
-%    FDUlogo.eps must be provided. Otherwise, the logo is omitted.
+% 4. If ZJNU logo is to be included in the head, then the file
+%    ZJNUlogo.eps must be provided. Otherwise, the logo is omitted.
 %
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{FDUletter}
+\ProvidesClass{ZJNUletter}
 \RequirePackage{graphicx}
 \RequirePackage{epstopdf}
 \RequirePackage{epsfig}
@@ -37,7 +37,7 @@
 \newcommand{\subject}[1]{\renewcommand{\@subject}{\subjectname: #1}}
 
 \newboolean{logofound}
-\IfFileExists{fudan.png}
+\IfFileExists{zjnu.png}
     {\setboolean{logofound}{true}}
     {\setboolean{logofound}{false}}
 
@@ -77,9 +77,9 @@
     \parbox{4.00in}
     {\raggedright
         \ifthenelse{\boolean{logofound}}
-           {\epsfig{file=fudan.png, height=0.95in}}
+           {\epsfig{file=zjnu.png, height=0.95in}}
            {\parbox[c][2.0in][c]{4.0in}{\hfill} 
-            \ClassWarning{FDUletter}{fudan.png COULD NOT BE FOUND!}}
+            \ClassWarning{ZJNUletter}{zjnu.png COULD NOT BE FOUND!}}
     } &
 %DEPARTMENT OR SCHOOL
 %  This just sets the size of the box to the right of the logo, and the size of the vertical line.  The vertical line is set by the size of the first numerical argument of the \parbox command.

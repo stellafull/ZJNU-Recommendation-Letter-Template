@@ -2,13 +2,14 @@
 %
 % Template by Brian Wood (brian.wood@oregonstate.edu).  Please feel free to send suggestions for changes; this template/cls is not exactly elegantly done!
 % Modified by Huang Weiran (huangweiran1998@outlook.com) to fit the need of FDU students.
+% Modified by Chen Zhiyuan (chenzhiyuan0920@gmail.com) to fit the need of ZJNU students.
 
 
-\documentclass[12pt]{FDUletter}
+\documentclass[12pt]{ZJNUletter}
 \usepackage{fontspec} 
 \usepackage{tikz} 
 \usepackage{xcolor}
-	\definecolor{fudanblue}{rgb}{0.0549, 0.208, 0.545}
+	\definecolor{zjnugreen}{RGB}{1, 110, 52}
 \usepackage{lipsum}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -70,9 +71,9 @@
 %
 %%%%%%%%%%% Put Personal Information Here %%%%%%%%%%%
 %
-\def\name{Ningsheng Xu,\\
+\def\name{xxx,\\
 Professor,\\
-School of Computer Science, FDU
+College of Mathematics and Computer Science, ZJNU
 }
 %
 % List your degree(s), licences, etc. here if you like.
@@ -81,34 +82,34 @@ School of Computer Science, FDU
 % Set the name of your Department or School here
 % I honestly don't know why the negative spacing is necessary to get the alignment of the first line correct.  This must be a ``\tikz'' thing.
 %%%%%%%%%%%%%%%%%%  School or Department %%%%%%%%%%%%%%%
-\def\Where{\hspace{-1.2mm}\textbf{\color{fudanblue}%{fudanblue}
-School of Computer Science,\\ Fudan University
+\def\Where{\hspace{-1.2mm}\textbf{\color{zjnugreen}%{zjnugreen}
+College of Mathematics and Computer Science,\\ Zhejiang Normal University
 }} 
 %%%%%%%%%%%%  Additional Contact Information %%%%%%%%%%%
 %
 % Set your preferred primary contact address here.
-\def\Address{No.220, Handan RD\\
-Yangpu District,} 
+\def\Address{No.688, Yingbin RD\\
+Wucheng District,} 
 %
-\def\CityZip{Shanghai, 200433} 
+\def\CityZip{Jinhua, 321004} 
 %
-% Set your FDU e-mail here
-\def\Email{\textbf{\color{fudanblue}E-mail}: xxx@fudan.edu.cn}
+% Set your Zjnu e-mail here
+\def\Email{\textbf{\color{zjnugreen}E-mail}: xxx@zjnu.edu.cn}
 %
 % Set your preferred contact number here
-\def\TEL{\textbf{\color{fudanblue}Phone}: 310-555-5555}
+\def\TEL{\textbf{\color{zjnugreen}Phone}: 310-555-5555}
 %
 % Set your department or personal website here
-\def\URL{\textbf{\color{fudanblue}URL}: http://www.fudan.edu.cn/}
+\def\URL{\textbf{\color{zjnugreen}URL}: http://www.zjnu.edu.cn/}
 %
 %%%%%%%%%%%%%%%%  Footer information  %%%%%%%%%%%%%%%%%%
 %
 %  The next line is for your college, used as a footer.  If you prefer not to have this, just comment out these lines in favor of the line labeled "[[Alternate]]" below
 \def\school{\small{
-  FDU $\cdot$
-     ~School of Computer Science $\cdot$
-     ~No.220 Handan RD $\cdot$
-     ~Shanghai, China P.R} } 
+  ZJNU $\cdot$
+     ~College of Mathematics and Computer Science $\cdot$
+     ~No.688 Yingbin RD $\cdot$
+     ~Jinhua, China P.R} } 
 % \def\school{~}  % [[Alternate]]
 %
 %%%%%%%%%%%%%%%%%%%%%  Signature line  %%%%%%%%%%%%%%%%%%%%%
@@ -172,7 +173,7 @@ Yangpu District,}
 
 % The ``\lipsum[1-8]" command just fills the letter with 8 paragraphs of Latin for the purposes of filler.  Unless you really want to send filler Latin to someone, you will replace this command with actual text.  Do that here:
 %
-\lipsum[1-5]
+\lipsum[1-6]
 
 %%%%%%% ``closing'' sets the sign-off line.
 \closing{Sincerely,}
